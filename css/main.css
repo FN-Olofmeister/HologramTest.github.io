@@ -16,7 +16,7 @@
 
 .btn-overlay {
     position: absolute; /* 절대 위치 지정 */
-    bottom: -25px; /* 이미지 아래로 20px */
+    bottom: 0px; 
     left: 50%; /* 화면의 가운데 */
     transform: translateX(-50%); /* 버튼을 정확히 가운데로 정렬 */
     padding: 50px 100px; /* 버튼 패딩 */
