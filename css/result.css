@@ -1,0 +1,13 @@
+#result{
+    display: none;
+    background-color: rgb(247, 240, 248);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#result h1 {
+    padding-top: 50px;  /* h1 위쪽 여백 */
+    padding-bottom: 30px; /* h1 아래쪽 여백 */
+    font-family: 'HakgyoansimWoojuR'
+    
+}

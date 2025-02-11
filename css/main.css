@@ -1,0 +1,57 @@
+#main{
+    background-color: rgb(247, 240, 248);
+    text-align: center;
+    font-size: 24px;
+    border-radius: 20px;
+    
+}
+
+
+/* 이미지와 버튼을 감싸는 부모 요소 */
+.image-container {
+    position: relative; /* 자식 요소에 절대 위치를 지정할 수 있도록 */
+    display: inline-block; /* 이미지가 콘텐츠와 함께 흐를 수 있게 함 */
+}
+
+
+.btn-overlay {
+    position: absolute; /* 절대 위치 지정 */
+    bottom: -25px; /* 이미지 아래로 20px */
+    left: 50%; /* 화면의 가운데 */
+    transform: translateX(-50%); /* 버튼을 정확히 가운데로 정렬 */
+    padding: 50px 100px; /* 버튼 패딩 */
+    background-color: transparent; /* 투명 배경 */
+    border: 2px solid transparent; /* 투명명 테두리 */
+    opacity: 0.8; /* 투명도 조절 (선택 사항) */
+    outline: none;
+}
+
+ /* 버튼에 마우스를 올려도 스타일이 변하지 않도록 */
+ .btn-overlay:hover {
+    background-color: transparent; /* 배경색 변경 없음 */
+    border-color: transparent; /* 테두리 색상 변경 없음 */
+    box-shadow: none;
+    outline: none;
+}
+
+/* 버튼 클릭 시 (active 상태) 스타일 변경 없음 */
+.btn-overlay:active {
+    background-color: transparent; /* 배경색 변경 없음 */
+    border-color: transparent; /* 테두리 색상 변경 없음 */
+    box-shadow: none; /* 클릭 시 그림자 제거 */
+    outline: none;
+}
+
+/* 버튼 포커스 시 (focus 상태) 스타일 변경 없음 */
+.btn-overlay:focus {
+    outline: none; /* 포커스 상태에서 외곽선 제거 */
+    box-shadow: none; /* 포커스 시 그림자 제거 */
+    border-color: transparent; /* 포커스 상태에서 테두리 색상 제거 */
+}
+
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
